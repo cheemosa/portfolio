@@ -1,0 +1,84 @@
+.message-container{
+    background-color:#BABABA;
+    position: absolute;
+    height: 300px;
+    width: 500px;
+    top: 25%;
+    left: 35%;
+    border: 3px solid #000000;
+    z-index: 1;
+    border-radius: 5px;
+}
+.message-container-top{
+    height: 35px;
+    background: linear-gradient(to bottom, #0077CC, #005599);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.message-container-top p{
+    font-size: 15px;
+    color: white;
+    margin-left: 4px;
+}
+
+.message-btn{
+    width: 30px;
+    height: 25px;
+    margin-right: 5px;
+    background-color: #d3414d;
+  border: 2px solid #808080; 
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 15px;
+}
+
+.message-btn:active{
+    transform: translateY(4px);
+}
+
+.message-container-bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75%;
+    width: 100%;
+}
+
+.message-container-bottom button{
+    width:100px;
+    height: 25px;   
+    background-color: #c0c0c0;
+  border: 2px solid #808080; 
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.message-container-bottom img{
+    height: 50px;
+    width: 50px;
+}
+
+.message-container-bottom-content p{
+    font-size: 1.5rem;
+    
+}
+
+.message-container-bottom-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.message-container-bottom button:active{
+    transform: translateY(2px);
+}
+
+.close{
+    display: none;
+}
+

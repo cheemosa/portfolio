@@ -1,0 +1,90 @@
+.project {
+  position: absolute;
+  height: 94%;
+  width: 100%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+  text-align: center;
+}
+
+/* PROJECT CARDS */
+.project-card-container {
+  overflow-y: auto;
+}
+
+.project-card {
+  border: 1px solid #316ac5; /* Windows XP blue color */
+  background-color: #f0f0f0; /* Windows XP background color */
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  transform: scale(0.75);
+  &:hover {
+    transform: scale(0.85);
+  }
+}
+
+.project-image img {
+  width: 75%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-bottom: 1px solid #316ac5; /* Windows XP blue color */
+}
+
+.project-details {
+  padding: 16px;
+
+  h3 {
+    margin-bottom: 8px;
+    color: #316ac5; /* Windows XP blue color */
+  }
+
+  p {
+    margin-bottom: 4px;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  .project-links {
+    margin-top: 16px;
+
+    a {
+      display: block;
+      margin-bottom: 8px;
+      text-decoration: none;
+      color: #007bff;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.project-top-bar {
+  height: 30px;
+  background-color: #316ac5;
+}
+
+.project-image-placeholder {
+  padding: 20px;
+  font-size: 14px;
+  color: #999;
+  border-bottom: 1px solid #316ac5;
+  background-color: #f8f8f8;
+}
+
+.project-scroll-area {
+  flex: 1;
+  overflow-y: auto;
+  height: 100%;
+}

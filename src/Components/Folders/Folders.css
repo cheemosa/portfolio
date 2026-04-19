@@ -1,0 +1,14 @@
+.folder{
+    height: 90%;
+}
+.folder-container{
+   height: 15%;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+}
+.folder img{
+    height: 50px;
+    cursor: pointer;
+}

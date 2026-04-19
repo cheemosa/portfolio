@@ -1,0 +1,16 @@
+.resume {
+  position: absolute;
+  height: 94%;
+  width: 100%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+}
+
+.resume-content {
+  height: calc(100% - 44px);
+  width: 100%;
+}
