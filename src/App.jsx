@@ -1,19 +1,20 @@
-import { useEffect, useState } from 'react'
-import Message from './Components/Message/Message'
-import Taskbar from './Components/Taskbar/Taskbar'
-import Folders from './Components/Folders/Folders';
-import startupImage from './assets/images/startupImage.png'
+import { useEffect, useState } from "react";
+import Message from "./Components/Message/Message";
+import Taskbar from "./Components/Taskbar/Taskbar";
+import Folders from "./Components/Folders/Folders";
+import startupImage from "./assets/images/startupImage.png";
 import windowsMp3 from "./assets/images/Audio/windows.mp3";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function App() {
-  const [isLoading,setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const handleClick = () =>{
-    setInterval(()=>{
+  const handleClick = () => {
+    setInterval(() => {
       setIsLoading(false);
-    },1000)
-  }
+    }, 1000);
+  };
 
   return isLoading ? (
     <div className="landing">
@@ -29,8 +30,9 @@ function App() {
       <Taskbar />
       <audio src={windowsMp3} autoPlay />
       <Analytics />
+      <SpeedInsights />
     </div>
   );
 }
 
-export default App
+export default App;
