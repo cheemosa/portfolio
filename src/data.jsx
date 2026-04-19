@@ -114,8 +114,8 @@ export const projectData = [
     details:
       "A Windows XP-inspired portfolio website built with React and Vite. Features a nostalgic desktop UI with draggable windows, a working taskbar, and a contact form powered by EmailJS.",
     tech: "React, Vite, EmailJS, CSS",
-    link: "https://github.com/al06/portfolio",
-    live: "https://al06.github.io/",
+    link: "https://github.com/cheemosa/portfolio",
+    live: "https://jeevottambhat.vercel.app",
   },
 ];
 
