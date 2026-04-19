@@ -11,7 +11,7 @@ const Resume = () => {
       <TitleBar title="Resume.pdf" onToggle={() => setResume(false)} />
       <div className="resume-content">
         <iframe
-          src="public\Jeevottam_Bhat_Resume.pdf"
+          src="/Jeevottam_Bhat_Resume.pdf"
           title="Resume"
           width="100%"
           height="100%"
