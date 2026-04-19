@@ -263,15 +263,15 @@ export const navigation = [
     img: about,
   },
   {
-    name: "Contact",
-    img: mail,
-  },
-  {
     name: "Skills",
     img: folder,
   },
   {
     name: "Project",
     img: folder,
+  },
+  {
+    name: "Contact",
+    img: mail,
   },
 ];
