@@ -5,7 +5,7 @@ import Folders from "./Components/Folders/Folders";
 import startupImage from "./assets/images/startupImage.png";
 import windowsMp3 from "./assets/images/Audio/windows.mp3";
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
