@@ -34,11 +34,6 @@ export const social = [
     url: "https://auth.geeksforgeeks.org/user/bhatjeevu06",
     icon: <SiGeeksforgeeks size={30} />,
   },
-  {
-    id: 5,
-    url: "https://YOUR_RESUME_URL.pdf",
-    icon: <FaFilePdf size={30} />,
-  },
 ];
 
 export const educationData = [
