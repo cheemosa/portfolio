@@ -95,7 +95,11 @@ const Folders = () => {
           src={tetris}
           alt=""
           {...getInteractionProps(() => {
-            window.location.href = "https://tetris-alo06.vercel.app/";
+            window.open(
+              "https://tetris-alo06.vercel.app/",
+              "_blank",
+              "noopener,noreferrer",
+            );
           })}
         />
         <p>Tetris</p>

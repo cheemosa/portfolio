@@ -12,6 +12,7 @@ import recallAi from "./assets/images/ProjectImages/recallAi.JPG";
 import folder from "./assets/images/FolderImages/folder.png";
 import mail from "./assets/images/FolderImages/mail.png";
 import about from "./assets/images/FolderImages/questionMark.png";
+import resume from "./assets/images/FolderImages/resume.png";
 
 export const social = [
   {
@@ -268,5 +269,9 @@ export const navigation = [
   {
     name: "Contact",
     img: mail,
+  },
+  {
+    name: "Resume",
+    img: resume,
   },
 ];
