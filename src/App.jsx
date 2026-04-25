@@ -7,13 +7,25 @@ import windowsMp3 from "./assets/images/Audio/windows.mp3";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
-function App() {
-  const [isLoading, setIsLoading] = useState(true);
+const SESSION_KEY = "portfolio_session";
+const SESSION_DURATION = 5 * 60 * 1000;
 
-  const handleClick = () => {
-    setInterval(() => {
-      setIsLoading(false);
-    }, 1000);
+function App() {
+  const [isLoading, setIsLoading] = useState(() => {
+    const session = localStorage.getItem(SESSION_KEY);
+    if (!session) return true;
+    const elapsed = Date.now() - parseInt(session);
+    return elapsed > SESSION_DURATION;
+  });
+
+  const handleStart = () => {
+    localStorage.setItem(SESSION_KEY, Date.now().toString());
+    setTimeout(() => setIsLoading(false), 1000);
+  };
+
+  const handleRestart = () => {
+    localStorage.removeItem(SESSION_KEY);
+    window.location.reload(true);
   };
 
   return isLoading ? (
@@ -33,7 +45,7 @@ function App() {
               <span className="logo-xp">xp</span>
             </div>
           </div>
-          <button className="start-btn" onClick={handleClick}>
+          <button className="start-btn" onClick={handleStart}>
             Start
           </button>
         </div>
@@ -44,7 +56,7 @@ function App() {
     <div className="main-container">
       <Message />
       <Folders />
-      <Taskbar />
+      <Taskbar handleRestart={handleRestart} />
       <audio src={windowsMp3} autoPlay />
       <Analytics />
       <SpeedInsights />

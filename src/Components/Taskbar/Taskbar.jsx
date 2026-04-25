@@ -1,11 +1,11 @@
-import React, { useEffect, useState,useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./Taskbar.css";
 import { social } from "../../data.jsx";
 import { ImWindows } from "react-icons/im";
 import { GiSpeakerOff, GiSpeaker } from "react-icons/gi";
 import badpig from "../../assets/images/Audio/badpig.mp3";
 
-const Taskbar = () => {
+const Taskbar = ({ handleRestart }) => {
   const [time, setTime] = useState(new Date());
   const [sound, setSound] = useState(true);
   const audioRef = useRef(null);
@@ -26,11 +26,7 @@ const Taskbar = () => {
     <div className="taskbar">
       {!sound && <audio ref={audioRef} src={badpig} autoPlay />}
       <div className="taskbar-first">
-        <button
-          onClick={() => {
-            window.location.reload(true);
-          }}
-        >
+        <button onClick={handleRestart}>
           <ImWindows size={30} />
           <p>Start</p>
         </button>
