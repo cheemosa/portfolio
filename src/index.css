@@ -18,30 +18,137 @@
   height: 100vh;
 }
 
-.landing{
+.landing {
   height: 100vh;
-}
-.landing img{
-  height: 100%;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.start-btn{
-  position: absolute;
-  margin: auto;
-  left: 0%;
-  right: 25%;
-  top: 0%;
-  bottom: 0%;
+.landing-top-bar {
+  height: 60px;
+  background: linear-gradient(to bottom, #1a3a8f, #0f2570);
+  border-bottom: 2px solid #f90;
+  flex-shrink: 0;
+}
+
+.landing-bottom-bar {
+  height: 80px;
+  background: linear-gradient(to bottom, #1a3a8f, #0f2570);
+  border-top: 2px solid #f90;
+  flex-shrink: 0;
+}
+
+.landing-main {
+  flex: 1;
+  background: radial-gradient(
+    ellipse at 20% 40%,
+    #7a9fd4 0%,
+    #4a6fc0 40%,
+    #3a5ab0 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.landing-identity {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.landing-name {
+  color: #ffffff;
+  font-size: 28px;
+  font-family: windows, sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Windows logo made with CSS */
+.landing-windows-logo {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  width: 36px;
+  height: 36px;
+  transform: skewY(-5deg);
+}
+
+.logo-pane {
+  border-radius: 1px;
+}
+
+.logo-pane.red {
+  background-color: #e74c3c;
+}
+.logo-pane.green {
+  background-color: #2ecc71;
+}
+.logo-pane.blue {
+  background-color: #3498db;
+}
+.logo-pane.yellow {
+  background-color: #f1c40f;
+}
+
+.logo-xp {
+  color: #e67e22;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
+.start-btn {
   height: 50px;
   width: 100px;
-  background-color: #BABABA;
   background-color: #c0c0c0;
-  border: 2px solid #808080; 
+  border: 2px solid #808080;
   font-size: 20px;
+  font-family: windows, sans-serif;
   cursor: pointer;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-.start-btn:active{
+
+.start-btn:active {
   transform: translateY(2px);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .landing-top-bar {
+    height: 44px;
+  }
+
+  .landing-bottom-bar {
+    height: 60px;
+  }
+
+  .landing-name {
+    font-size: 20px;
+  }
+
+  .logo-grid {
+    width: 28px;
+    height: 28px;
+  }
+
+  .start-btn {
+    height: 44px;
+    width: 88px;
+    font-size: 16px;
+  }
 }

@@ -8,7 +8,7 @@
   top: 0;
   background-color: white;
   z-index: 1000;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 .skills-container {
@@ -66,4 +66,34 @@
   overflow-y: auto;
   height: 100%;
   align-items: flex-start;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .skills-category {
+    margin: 8px 6px;
+    padding: 10px 12px;
+
+    h2 {
+      font-size: 14px;
+    }
+  }
+
+  .skills-grid {
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  .skill {
+    width: 56px;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+
+    p {
+      font-size: 10px;
+    }
+  }
 }

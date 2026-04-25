@@ -1,13 +1,13 @@
-.contact{
-    position: absolute;
-    height: 94%;
-    width: 100%;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    background-color: white;
-    z-index: 1000;
+.contact {
+  position: absolute;
+  height: 94%;
+  width: 100%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
 }
 
 .windows-xp-form-container {
@@ -21,7 +21,7 @@
 
 .form {
   background-color: #ffffff;
-  border: 2px solid #000080; 
+  border: 2px solid #000080;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 20px;
@@ -35,7 +35,7 @@
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #000080; 
+    color: #000080;
   }
 
   input,
@@ -43,9 +43,9 @@
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
-    border: 1px solid #000080; 
+    border: 1px solid #000080;
     border-radius: 5px;
-    color: #000080; 
+    color: #000080;
   }
 
   textarea {
@@ -54,7 +54,7 @@
 }
 
 .contact button {
-  background-color: #000080; 
+  background-color: #000080;
   color: #ffffff;
   padding: 10px 20px;
   border: none;
@@ -66,4 +66,30 @@
 .contact button:hover {
   background-color: #0000a0;
   color: white;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .windows-xp-form-container {
+    height: auto;
+    padding: 16px;
+    justify-content: flex-start;
+    margin-top: 16px;
+  }
+
+  .form {
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .contact-inputs {
+    margin-bottom: 14px;
+  }
+
+  .contact button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
 }

@@ -18,10 +18,27 @@ function App() {
 
   return isLoading ? (
     <div className="landing">
-      <button className="start-btn" onClick={handleClick}>
-        Start
-      </button>
-      <img src={startupImage} alt="" />
+      <div className="landing-top-bar" />
+      <div className="landing-main">
+        <div className="landing-center">
+          <div className="landing-identity">
+            <span className="landing-name">Jeevottam Bhat</span>
+            <div className="landing-windows-logo">
+              <div className="logo-grid">
+                <div className="logo-pane red" />
+                <div className="logo-pane green" />
+                <div className="logo-pane blue" />
+                <div className="logo-pane yellow" />
+              </div>
+              <span className="logo-xp">xp</span>
+            </div>
+          </div>
+          <button className="start-btn" onClick={handleClick}>
+            Start
+          </button>
+        </div>
+      </div>
+      <div className="landing-bottom-bar" />
     </div>
   ) : (
     <div className="main-container">
