@@ -56,9 +56,16 @@ export const workData = [
   {
     company: "Louisa AI",
     role: "Software Development Engineer I",
-    duration: "2024 - Present",
+    duration: "Jun 2024 - Present",
     description:
-      "Software engineer at an AI startup spun off from Goldman Sachs, working across the full stack — from building user-facing features to backend services and infrastructure.",
+      "Led key frontend engineering initiatives including a full authentication overhaul by migrating from Frontegg to AWS Cognito, implementing email/password, SSO, and passkey-based authentication while ensuring compliance via Cookiebot integration. Contributed to high-impact product features in the network domain, including AI-driven relationship discovery (Overlaps), introduction request workflows, and second-degree connection capabilities to enhance user networking and drive revenue. Executed a seamless upgrade from React 17 to 18 alongside dependency modernization with zero production regressions, initiated modularization of the component library into a standalone package for scalability, and built a unified VideoPlayer component supporting Brightcove, YouTube, Vimeo, and Dailymotion with platform-specific rendering and cookie consent gating. Drove performance optimization by leading a Webpack-to-Vite migration, significantly reducing build times and improving developer experience through faster HMR and optimized code-splitting.",
+  },
+  {
+    company: "Louisa AI",
+    role: "Software Engineering Intern",
+    duration: "Jan 2024 - Jun 2024",
+    description:
+      "Built a news intelligence pipeline ingesting articles via Crunchbase, scraping content, and running NLP chains for classification, keyword extraction, and summarization via Apache Airflow.",
   },
 ];
 
@@ -78,7 +85,7 @@ export const projectData = [
     name: "Mutual Fund Tracker",
     image: mutualFund,
     details:
-      "A fully autonomous mutual fund tracking system with a GitHub Actions pipeline, Groq LLM signals, Tavily research agent, and a Recharts dashboard. Supports text-to-SQL querying for portfolio analysis.",
+      "A fully autonomous mutual fund tracking system with a GitHub Actions pipeline, Groq LLM signals, Tavily news search, and a Recharts dashboard. Supports text-to-SQL querying for portfolio analysis.",
     tech: "TypeScript, Node.js, Groq, Tavily, Recharts, GitHub Actions",
     link: "https://github.com/cheemosa/mutual_fund_app",
     live: null,
@@ -136,6 +143,14 @@ export const skillCategories = [
         name: "SQL",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
       },
+      {
+        name: "Java",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+      },
+      {
+        name: "Python",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      },
     ],
   },
   {
@@ -159,6 +174,22 @@ export const skillCategories = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
       },
       { name: "TanStack Query", icon: "https://tanstack.com/favicon.ico" },
+      {
+        name: "Webpack",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg",
+      },
+      {
+        name: "Tailwind",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+      },
+      {
+        name: "Material UI",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+      },
+      {
+        name: "Jest",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
+      },
     ],
   },
   {
@@ -184,6 +215,14 @@ export const skillCategories = [
       { name: "BullMQ", icon: "https://bullmq.io/favicon.ico" },
       {
         name: "REST APIs",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+      },
+      {
+        name: "Spring Boot",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+      },
+      {
+        name: "FastAPI",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
       },
     ],
@@ -214,10 +253,6 @@ export const skillCategories = [
     id: 5,
     category: "AI & ML",
     skills: [
-      {
-        name: "LangChain.js",
-        icon: "https://avatars.githubusercontent.com/u/126733545?s=200&v=4",
-      },
       { name: "Hugging Face", icon: "https://huggingface.co/favicon.ico" },
       {
         name: "RAG",
@@ -226,6 +261,14 @@ export const skillCategories = [
       {
         name: "Prompt Eng.",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+      },
+      {
+        name: "Claude",
+        icon: "https://avatars.githubusercontent.com/u/76263028?s=200&v=4",
+      },
+      {
+        name: "Copilot",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
       },
     ],
   },
@@ -249,6 +292,31 @@ export const skillCategories = [
         name: "Git",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
       },
+      {
+        name: "JWT",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      },
+      {
+        name: "OAuth",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg",
+      },
+      {
+        name: "Swagger",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg",
+      },
+    ],
+  },
+  {
+    id: 7,
+    category: "CS Fundamentals",
+    type: "tags",
+    skills: [
+      { name: "OOP" },
+      { name: "Design Patterns" },
+      { name: "Data Structures & Algorithms" },
+      { name: "Operating Systems" },
+      { name: "Agile" },
+      { name: "Microservices" },
     ],
   },
 ];

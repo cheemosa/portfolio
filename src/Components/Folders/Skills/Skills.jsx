@@ -18,14 +18,24 @@ const Skills = () => {
             {skillCategories.map((cat) => (
               <div key={cat.id} className="skills-category">
                 <h2>{cat.category}</h2>
-                <div className="skills-grid">
-                  {cat.skills.map((skill, index) => (
-                    <div className="skill" key={index}>
-                      <img src={skill.icon} alt={skill.name} />
-                      <p>{skill.name}</p>
-                    </div>
-                  ))}
-                </div>
+                {cat.type === "tags" ? (
+                  <div className="skills-tags">
+                    {cat.skills.map((skill, index) => (
+                      <span className="skill-tag" key={index}>
+                        {skill.name}
+                      </span>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="skills-grid">
+                    {cat.skills.map((skill, index) => (
+                      <div className="skill" key={index}>
+                        <img src={skill.icon} alt={skill.name} />
+                        <p>{skill.name}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>

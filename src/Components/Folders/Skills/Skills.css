@@ -68,7 +68,22 @@
   align-items: flex-start;
 }
 
-/* MOBILE */
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background-color: #eef0ff;
+  color: #000080;
+  border: 1px solid #000080;
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
 @media (max-width: 768px) {
   .skills-category {
     margin: 8px 6px;
@@ -95,5 +110,9 @@
     p {
       font-size: 10px;
     }
+  }
+  .skill-tag {
+    font-size: 11px;
+    padding: 4px 10px;
   }
 }

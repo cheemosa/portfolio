@@ -24,22 +24,27 @@ const About = () => {
               <p>
                 I'm a Software Engineer based in Mangalore, India, currently
                 working at <strong>Louisa AI</strong> — an AI startup spun off
-                from Goldman Sachs. I work across the full stack, building
-                everything from React frontends to Node.js backends and
-                distributed systems.
+                from Goldman Sachs, where I joined as an intern and converted
+                full-time. I work across the full stack — authentication
+                systems, UI features, backend pipelines, and dev tooling.
               </p>
               <p style={{ marginTop: "12px" }}>
-                Outside of work, I'm deep into building side projects that sit
-                at the intersection of AI and backend engineering — like{" "}
-                <strong>RecallAI</strong>, an AI-powered spaced repetition app,
-                and a <strong>mutual fund tracking system</strong> with LLM
-                signals and a Recharts dashboard.
+                Some highlights from work: led a Webpack-to-Vite migration that
+                cut build times by 60% and HMR from 2,719ms to 13ms, and owned a
+                full auth overhaul migrating to AWS Cognito with passkey
+                support.
+              </p>
+              <p style={{ marginTop: "12px" }}>
+                Outside of work, I build side projects at the intersection of AI
+                and backend engineering — <strong>RecallAI</strong>, an
+                AI-powered spaced repetition app, and a{" "}
+                <strong>Mutual Fund Tracker</strong> with LLM signals and an
+                automated GitHub Actions pipeline.
               </p>
               <p style={{ marginTop: "12px" }}>
                 Apart from these, I love playing sports, watching football,
-                playing video games. And binge watching youtube videos
+                playing video games, and binge watching YouTube videos.
               </p>
-
               <h3 style={{ color: "#000080", margin: "20px 0 10px" }}>
                 Experience
               </h3>
@@ -52,9 +57,24 @@ const About = () => {
                       <p style={{ fontSize: "13px", margin: "2px 0" }}>
                         {w.duration}
                       </p>
-                      <p style={{ fontSize: "14px", marginTop: "6px" }}>
-                        {w.description}
-                      </p>
+                      <ul style={{ marginTop: "8px", paddingLeft: "16px" }}>
+                        {w.description
+                          .split(". ")
+                          .filter(Boolean)
+                          .map((point, idx) => (
+                            <li
+                              key={idx}
+                              style={{
+                                fontSize: "14px",
+                                lineHeight: "1.6",
+                                marginBottom: "6px",
+                                color: "#333",
+                              }}
+                            >
+                              {point.trim().replace(/\.$/, "")}
+                            </li>
+                          ))}
+                      </ul>
                     </div>
                   </div>
                 ))}
