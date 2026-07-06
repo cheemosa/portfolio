@@ -56,7 +56,7 @@ export const workData = [
   {
     company: "Louisa AI",
     role: "Software Development Engineer I",
-    duration: "Jun 2024 - Present",
+    duration: "Jun 2024 - Jun 2026",
     description:
       "Led key frontend engineering initiatives including a full authentication overhaul by migrating from Frontegg to AWS Cognito, implementing email/password, SSO, and passkey-based authentication while ensuring compliance via Cookiebot integration. Contributed to high-impact product features in the network domain, including AI-driven relationship discovery (Overlaps), introduction request workflows, and second-degree connection capabilities to enhance user networking and drive revenue. Executed a seamless upgrade from React 17 to 18 alongside dependency modernization with zero production regressions, initiated modularization of the component library into a standalone package for scalability, and built a unified VideoPlayer component supporting Brightcove, YouTube, Vimeo, and Dailymotion with platform-specific rendering and cookie consent gating. Drove performance optimization by leading a Webpack-to-Vite migration, significantly reducing build times and improving developer experience through faster HMR and optimized code-splitting.",
   },

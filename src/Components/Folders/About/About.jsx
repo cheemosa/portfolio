@@ -22,8 +22,8 @@ const About = () => {
                 Hi, I'm Jeevottam Bhat 👋
               </h2>
               <p>
-                I'm a Software Engineer based in Mangalore, India, currently
-                working at <strong>Louisa AI</strong> — an AI startup spun off
+                I'm a Software Engineer based in Mangalore, India, previously 
+                worked at <strong>Louisa AI</strong> — an AI startup spun off
                 from Goldman Sachs, where I joined as an intern and converted
                 full-time. I work across the full stack — authentication
                 systems, UI features, backend pipelines, and dev tooling.
