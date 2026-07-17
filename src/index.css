@@ -20,8 +20,14 @@
 
 .landing {
   height: 100vh;
+  height: 100dvh; /* dynamic viewport height — fixes mobile browser chrome */
   display: flex;
   flex-direction: column;
+  overflow: hidden; /* prevent scroll */
+  position: fixed; /* lock to viewport */
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .landing-top-bar {
@@ -49,6 +55,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .landing-center {
@@ -129,6 +136,16 @@
 
 /* MOBILE */
 @media (max-width: 768px) {
+  .main-container {
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
   .landing-top-bar {
     height: 44px;
   }

@@ -55,17 +55,23 @@ export const educationData = [
 export const workData = [
   {
     company: "Louisa AI",
-    role: "Software Development Engineer I",
+    role: "Software Engineer I",
     duration: "Jun 2024 - Jun 2026",
-    description:
-      "Led key frontend engineering initiatives including a full authentication overhaul by migrating from Frontegg to AWS Cognito, implementing email/password, SSO, and passkey-based authentication while ensuring compliance via Cookiebot integration. Contributed to high-impact product features in the network domain, including AI-driven relationship discovery (Overlaps), introduction request workflows, and second-degree connection capabilities to enhance user networking and drive revenue. Executed a seamless upgrade from React 17 to 18 alongside dependency modernization with zero production regressions, initiated modularization of the component library into a standalone package for scalability, and built a unified VideoPlayer component supporting Brightcove, YouTube, Vimeo, and Dailymotion with platform-specific rendering and cookie consent gating. Drove performance optimization by leading a Webpack-to-Vite migration, significantly reducing build times and improving developer experience through faster HMR and optimized code-splitting.",
+    description: [
+      "Owned the end-to-end migration from Frontegg to AWS Cognito, building JWT-based login, SSO, and passkey flows in-house to fully retire the paid vendor, and integrated Cookiebot in parallel to bring the app into compliance with client cookie consent requirements.",
+      "Led a Webpack-to-Vite migration, cutting local build time 60% (38s to 15s) and Hot Module Replacement latency 99% (2,719ms to 13ms), while improving JS chunk splitting from 5 to about 88 output chunks.",
+      "Built the UI and AI prompt engineering for Overlaps, a feature clients actively requested and prospects consistently called out during demos.",
+      "Built Spring Boot features for second-degree connection detection, adding an Elasticsearch indexer field to surface connection counts, and an introduction-request endpoint with a custom HTML email template.",
+      "Upgraded React 17 to 18 with concurrent package migrations and zero production regressions; decoupled the component library into a standalone npm package and built a unified VideoPlayer supporting Brightcove, YouTube, Vimeo, and Dailymotion.",
+    ],
   },
   {
     company: "Louisa AI",
     role: "Software Engineering Intern",
     duration: "Jan 2024 - Jun 2024",
-    description:
-      "Built a news intelligence pipeline ingesting articles via Crunchbase, scraping content, and running NLP chains for classification, keyword extraction, and summarization via Apache Airflow.",
+    description: [
+      "Built a news intelligence pipeline (Python) processing 5,000+ articles a day: ingesting via the Crunchbase API, extracting full text with newspaper4k, and classifying and summarizing through a multi-model NLP chain (KeyBERT, BART-large-CNN); orchestrated via Airflow and surfaced in the product UI.",
+    ],
   },
 ];
 
@@ -187,8 +193,12 @@ export const skillCategories = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
       },
       {
-        name: "Jest",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
+        name: "SCSS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+      },
+      {
+        name: "Context API",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
       },
     ],
   },
@@ -225,6 +235,10 @@ export const skillCategories = [
         name: "FastAPI",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
       },
+      {
+        name: "GraphQL",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+      },
     ],
   },
   {
@@ -234,6 +248,10 @@ export const skillCategories = [
       {
         name: "PostgreSQL",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+      },
+      {
+        name: "MongoDB",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
       },
       {
         name: "Redis",
@@ -304,16 +322,44 @@ export const skillCategories = [
         name: "Swagger",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg",
       },
+      {
+        name: "Terraform",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg",
+      },
+      {
+        name: "GitLab",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg",
+      },
+      {
+        name: "Lambda",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
+      },
     ],
   },
   {
     id: 7,
-    category: "CS Fundamentals",
+    category: "Testing",
+    skills: [
+      {
+        name: "Jest",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
+      },
+      {
+        name: "JUnit",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+      },
+    ],
+  },
+  {
+    id: 8,
+    category: "Practices",
     type: "tags",
     skills: [
-      { name: "OOP" },
+      { name: "DSA" },
       { name: "Design Patterns" },
-      { name: "Data Structures & Algorithms" },
+      { name: "OOP" },
+      { name: "MVC" },
+      { name: "SDLC" },
       { name: "Operating Systems" },
       { name: "Agile" },
       { name: "Microservices" },

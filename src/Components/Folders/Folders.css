@@ -43,6 +43,7 @@
     min-height: unset;
     align-items: center;
     padding: 6px 2px;
+    justify-content: flex-start; /* pack to top */
   }
 
   .folder img {

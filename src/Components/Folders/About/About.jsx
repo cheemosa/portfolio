@@ -22,11 +22,13 @@ const About = () => {
                 Hi, I'm Jeevottam Bhat 👋
               </h2>
               <p>
-                I'm a Software Engineer based in Mangalore, India, previously 
-                worked at <strong>Louisa AI</strong> — an AI startup spun off
-                from Goldman Sachs, where I joined as an intern and converted
-                full-time. I work across the full stack — authentication
-                systems, UI features, backend pipelines, and dev tooling.
+                Software Engineer with 2+ years of production experience at{" "}
+                <strong>Louisa AI</strong>, a Goldman Sachs spin-off, owning
+                features end to end from architecture through deployment —
+                spanning authentication infrastructure, build tooling, and
+                product features. Builds full-stack AI systems independently
+                outside of work and works comfortably in agile, cross-functional
+                teams.
               </p>
               <p style={{ marginTop: "12px" }}>
                 Some highlights from work: led a Webpack-to-Vite migration that
@@ -58,22 +60,19 @@ const About = () => {
                         {w.duration}
                       </p>
                       <ul style={{ marginTop: "8px", paddingLeft: "16px" }}>
-                        {w.description
-                          .split(". ")
-                          .filter(Boolean)
-                          .map((point, idx) => (
-                            <li
-                              key={idx}
-                              style={{
-                                fontSize: "14px",
-                                lineHeight: "1.6",
-                                marginBottom: "6px",
-                                color: "#333",
-                              }}
-                            >
-                              {point.trim().replace(/\.$/, "")}
-                            </li>
-                          ))}
+                        {w.description.map((point, idx) => (
+                          <li
+                            key={idx}
+                            style={{
+                              fontSize: "14px",
+                              lineHeight: "1.6",
+                              marginBottom: "6px",
+                              color: "#333",
+                            }}
+                          >
+                            {point}
+                          </li>
+                        ))}
                       </ul>
                     </div>
                   </div>
